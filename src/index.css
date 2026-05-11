@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --classic-dark: #1a1410;
+  --classic-gold: #b08d57;
+  --classic-cream: #f9f5f0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--classic-dark);
+  color: var(--classic-cream);
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-classic-serif { font-family: 'Playfair Display', serif; }
+.font-classic-body { font-family: 'Lora', serif; }
+
+.texture-overlay::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  z-index: 50;
+}
+
+.btn-classic {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid var(--classic-gold);
+  color: var(--classic-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.4s;
+  background: transparent;
+}
+
+.btn-classic:hover {
+  color: #fff;
+  background-color: var(--classic-gold);
+}
+
+.btn-classic-filled {
+  background-color: var(--classic-gold);
+  color: #fff;
+  border: 1px solid var(--classic-gold);
+  padding: 10px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.image-frame {
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bg-cream { background-color: var(--classic-cream); }
+.bg-dark-wood { background-color: var(--classic-dark); }
+.classic-line-short { height: 2px; background: var(--classic-gold); width: 50px; margin: 15px auto; }
