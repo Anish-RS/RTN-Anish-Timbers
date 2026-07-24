@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        node "node20"   // Configure in Jenkins Global Tools
-    }
+    
 
     environment {
         AWS_DEFAULT_REGION = "us-east-1"
