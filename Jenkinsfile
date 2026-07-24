@@ -8,7 +8,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = "us-east-1"
         S3_BUCKET = "eflow-suji-ani"
-        GIT_REPO = "https://github.com/Anish-RS/RTN-Anish-Timbers.git"
+        //GIT_REPO = "https://github.com/Anish-RS/RTN-Anish-Timbers.git"
         SECRET_ID = "SECRET_ID"
         CLOUDFRONT_DISTRIBUTION_ID = "E6W572WT7Q5OU"
     }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 deleteDir()
                 git branch: "main",
-                    url: "${GIT_REPO}",
+                    url: "https://github.com/Anish-RS/RTN-Anish-Timbers.git",
                     //credentialsId: 'jenkins'  // Use your Git repo deploy key
             }
         }
