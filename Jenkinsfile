@@ -18,9 +18,9 @@ pipeline {
             steps {
                 deleteDir()
                 git branch: "main",
-                    url: "https://github.com/Anish-RS/RTN-Anish-Timbers.git",
+                    url: "https://github.com/Anish-RS/RTN-Anish-Timbers.git"
                     //credentialsId: 'jenkins'  // Use your Git repo deploy key
-                    }
+                    
             }
         }
         
